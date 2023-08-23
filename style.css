@@ -1,0 +1,158 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+div{
+    margin-bottom:20px;
+}
+
+body{ 
+background-image: url(https://images.unsplash.com/photo-1615729947596-a598e5de0ab3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80); 
+background-size: cover; 
+}
+h1{
+    font-family: 'Chicle', cursive;
+    color: black;
+    font-size: 5rem;
+    text-align: center;
+}
+p.sub{
+    font-family: 'Chicle', cursive;
+    font-size: 2.5rem;
+    padding-top: 10px;
+    color:black;
+    text-shadow: 0px 10px 5px green;
+    text-align: center;
+}
+main{
+    font-family: 'Rubik', sans-serif;
+    color: white;
+}
+
+/*header*/
+
+
+div.t-header{
+    display: flex;
+    flex-direction:column;
+    justify-items:center;
+    align-items:center;
+    padding-top: 60px;
+}
+
+
+/*main*/
+
+div.formname{
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 5%;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3rem;
+    position: relative;
+    background: rgba(44, 62, 80,0.7);
+}
+
+/*forms position*/
+p{
+    margin-bottom: 5px;
+}
+label, p{
+    margin-bottom: 5px;
+}
+label.last{
+    margin-bottom: 0px;
+}
+.estiloa{
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    align-items: flex-start;
+}
+.estilob{
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    align-items: flex-start;
+}
+
+/*forms design*/
+main{
+    font-size: 1.2rem;
+    padding:20px;
+}
+
+[type="text"],
+[type="number"],
+[type="email"],
+[type="submit"]
+{
+    width: 100%;
+    height: 2rem;
+}
+
+[type="submit"]{
+    cursor: pointer;
+    background: green;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    border-style: solid;
+    border-color: white;
+    font-size: 1.2rem
+}
+[type="submit"]:active{
+    background: greenyellow;
+    color: black;
+    font-size: 1.2rem
+}
+
+
+
+select{
+    width: 100%;
+    height: 2rem;
+}
+textarea{
+    max-width: 100% ;
+    min-width: 100%;
+    max-height: 10rem;
+    min-height: 10rem;
+}
+
+/* responsive*/
+div.grid{
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main";
+}
+div.t-header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+}
+@media (max-width: 500px) {
+    div.grid {
+      grid-template-areas:
+        "header"
+        "main";
+    }
+  }
+
+@media screen and (max-width: 360px){
+    form{
+        width: 90%;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    p.sub{
+        font-size: 1.5rem;
+    }
+}

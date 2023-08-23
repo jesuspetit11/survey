@@ -1,0 +1,125 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Aquarium Valencia Venezuela Fishes Snakes Lions Fun Kids Cool">
+    <meta name="author" content="Jesus Petit">
+    <link href="https://fonts.googleapis.com/css2?family=Chicle&family=Lexend+Exa:wght@300&family=Uncial+Antiqua&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chicle&family=Lexend+Exa:wght@300&family=Rubik&family=Uncial+Antiqua&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="style.css">
+    <title>Valencia's Aquarium</title>
+</head>
+<body>
+
+<div class="grid">
+
+    <header class="header">
+    <div class="t-header">
+        <h1 id="title">Valencia's Aquarium Staff Survey</h1>
+        <p class="sub" id="description">A place for the family</p>
+    </div>
+    </header>
+
+<main class="main">
+    <div class="formname">
+    <form action="" id="survey-form">
+
+        <div class="nombre estiloa">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" maxlength="15" required>
+        </div>
+
+        <div class="apellido estiloa">
+        <label for="lastname">Last name</label>
+        <input type="text" id="lastname" placeholder="Enter your last name">
+        </div>
+
+        <div class="edad estiloa">
+        <label for="age" id="number-label">Age <span class="peque">optional</span></label>
+        <input type="number" id="number" placeholder="Age" min="18" max="70">
+        </div>
+
+        <div class="correo estiloa">
+        <label for="email" id="email-label">Email </label>
+        <input type="email" id="email" required placeholder="Enter your Email">
+        </div>
+
+        <div class="role">
+        <label for="options" aria-placeholder="Select current rol" class="estiloa">Are you a?</label>
+            <select name="" id="dropdown">
+                <option value="none" disabled selected value>Select your current role</option>
+                <option value="vet">Veterinarian</option>
+                <option value="vettech">Veterinary Technician</option>
+                <option value="animalcurator">Animal Curator</option>
+                <option value="manager">Finance Manager/Director</option>
+                <option value="docent/volunteer">Docent/Volunteer</option>
+            </select>
+        </div>
+
+        <div class="jobrating estiloa">
+        </p>Would do you recommend your job?</p>
+            <label for="definitely">
+                <input type="radio" id="definitely" name="jobrate" value="definitely">
+                Definitely
+            </label>
+            <label for="maybe">
+                <input type="radio" id="maybe" name="jobrate" value="maybe">
+                Maybe
+            </label>
+            <label for="notsure">
+                <input type="radio" id="notsure" name="jobrate" value="notsure">
+                Not sure
+            </label>
+        </div>
+
+        <div class="estiloa">
+        <p>What is your favorite part of working here?</p>
+            <select name="" id="">
+                <option value="none" disabled selected value>Select your favorite part</option>
+                <option value="beone">Be one with the nature</option>
+                <option value="money">Get money</option>
+                <option value="monkey">Return to monkey</option>
+                <option value="learn">Learn a bit about animals everyday</option>
+            </select>
+        </div>
+        
+        <div class="estiloa">
+        <p>What do you like to see improved in the Aquarium?</p>
+        <label for="food">
+            <input type="checkbox" id="food" value="food">
+            Better food for the animals
+        </label>
+        <label for="ticket">
+            <input type="checkbox" id="ticket" value="ticket">
+            Cheaper ticket
+        </label>
+        <label for="animals">
+            <input type="checkbox" id="animals" value="animals">
+            More animals
+        </label>
+        <label for="staff">
+            <input type="checkbox" id="staff" value="staff">
+            Staff more capable
+        </label>
+        <label for="species" class="last">
+            <input type="checkbox" id="species" value="monkey">
+            More species of Monkeys
+        </label>
+        </div>
+
+        <div class="estiloa">
+        <p>Any comments or suggestions?</p>
+        <textarea name="textarea" id="" cols="30" rows="10"></textarea>
+        </div>
+
+        <div class="estilob">
+        <input type="submit" value="Submit survey" id="submit">
+        </div>
+    </form>
+    </div>
+</main>
+
+</div>
+</body>
+</html>
